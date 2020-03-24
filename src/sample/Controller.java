@@ -67,7 +67,7 @@ public class Controller {
     public void btnClicked(ActionEvent actionEvent) { // get the number of clicked button
         String temp = ((Button) actionEvent.getSource()).getId().substring(2);
         int value = Integer.parseInt(temp);
-        //System.out.println(value); // check if we got the correct button number
+        //System.out.println(value); // check if program got the correct button number
         changeNeighbour(value);
     }
 }
