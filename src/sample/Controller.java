@@ -23,7 +23,7 @@ public class Controller {
             selectrb[allrbA].setText(String.valueOf(rnd.nextInt(5) + 5));
     }
 
-    public void changeNeibour(int id) { // based on pressed button number make appropriate changes to other buttons
+    public void changeNeighbour(int id) { // based on pressed button number make appropriate changes to other buttons
         switch (id) {
             case 1: {
                 if (Integer.parseInt(rb1.getText()) != 0 && Integer.parseInt(rb1.getText()) > 0) {
@@ -68,6 +68,6 @@ public class Controller {
         String temp = ((Button) actionEvent.getSource()).getId().substring(2);
         int value = Integer.parseInt(temp);
         //System.out.println(value); // check if there is a correct id of the pressed button
-        changeNeibour(value);
+        changeNeighbour(value);
     }
 }
