@@ -12,7 +12,7 @@ public class Controller {
     public Button rb3;
     public Button start;
 
-    public void startUp() throws NullPointerException { //method to generate random numbers for the buttons
+    public void startUp() { //method to generate random numbers for the buttons
         final Button[] selectrb = new Button[4];
         selectrb[0] = rb1;
         selectrb[1] = rb2;
